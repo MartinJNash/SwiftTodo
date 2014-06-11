@@ -9,10 +9,14 @@
 /* Begin PBXBuildFile section */
 		C66727B01942377E009A40FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66727AF1942377E009A40FE /* AppDelegate.swift */; };
 		C66727B31942377E009A40FE /* NoteNote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C66727B11942377E009A40FE /* NoteNote.xcdatamodeld */; };
-		C66727B51942377E009A40FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66727B41942377E009A40FE /* ViewController.swift */; };
+		C66727B51942377E009A40FE /* AllNotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66727B41942377E009A40FE /* AllNotesViewController.swift */; };
 		C66727B81942377E009A40FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C66727B61942377E009A40FE /* Main.storyboard */; };
 		C66727BA1942377E009A40FE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C66727B91942377E009A40FE /* Images.xcassets */; };
 		C66727C61942377E009A40FE /* NoteNoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66727C51942377E009A40FE /* NoteNoteTests.swift */; };
+		C66727D019423828009A40FE /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66727CF19423828009A40FE /* CoreDataStack.swift */; };
+		C66727D6194280E9009A40FE /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66727D5194280E9009A40FE /* Note.swift */; };
+		C66727E21942B1F3009A40FE /* SingleNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66727E11942B1F3009A40FE /* SingleNoteViewController.swift */; };
+		C66727E61942B5E7009A40FE /* CreateNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66727E51942B5E7009A40FE /* CreateNoteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,12 +34,17 @@
 		C66727AE1942377E009A40FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C66727AF1942377E009A40FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C66727B21942377E009A40FE /* NoteNote.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NoteNote.xcdatamodel; sourceTree = "<group>"; };
-		C66727B41942377E009A40FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C66727B41942377E009A40FE /* AllNotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllNotesViewController.swift; sourceTree = "<group>"; };
 		C66727B71942377E009A40FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C66727B91942377E009A40FE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C66727BF1942377E009A40FE /* NoteNoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoteNoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C66727C41942377E009A40FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C66727C51942377E009A40FE /* NoteNoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteNoteTests.swift; sourceTree = "<group>"; };
+		C66727CF19423828009A40FE /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		C66727D5194280E9009A40FE /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		C66727D719428980009A40FE /* NoteNote-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NoteNote-Bridging-Header.h"; sourceTree = "<group>"; };
+		C66727E11942B1F3009A40FE /* SingleNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleNoteViewController.swift; sourceTree = "<group>"; };
+		C66727E51942B5E7009A40FE /* CreateNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNoteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,10 +87,10 @@
 			isa = PBXGroup;
 			children = (
 				C66727AF1942377E009A40FE /* AppDelegate.swift */,
-				C66727B41942377E009A40FE /* ViewController.swift */,
 				C66727B61942377E009A40FE /* Main.storyboard */,
 				C66727B91942377E009A40FE /* Images.xcassets */,
-				C66727B11942377E009A40FE /* NoteNote.xcdatamodeld */,
+				C66727E31942B1FD009A40FE /* View Controllers */,
+				C66727DB19428FC1009A40FE /* CoreData */,
 				C66727AD1942377E009A40FE /* Supporting Files */,
 			);
 			path = NoteNote;
@@ -90,6 +99,7 @@
 		C66727AD1942377E009A40FE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C66727D719428980009A40FE /* NoteNote-Bridging-Header.h */,
 				C66727AE1942377E009A40FE /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -110,6 +120,34 @@
 				C66727C41942377E009A40FE /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C66727DB19428FC1009A40FE /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				C66727B11942377E009A40FE /* NoteNote.xcdatamodeld */,
+				C66727CF19423828009A40FE /* CoreDataStack.swift */,
+				C66727D5194280E9009A40FE /* Note.swift */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		C66727E31942B1FD009A40FE /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C66727E41942B212009A40FE /* Notes */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		C66727E41942B212009A40FE /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				C66727B41942377E009A40FE /* AllNotesViewController.swift */,
+				C66727E51942B5E7009A40FE /* CreateNoteViewController.swift */,
+				C66727E11942B1F3009A40FE /* SingleNoteViewController.swift */,
+			);
+			name = Notes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,8 +249,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C66727B51942377E009A40FE /* ViewController.swift in Sources */,
+				C66727E21942B1F3009A40FE /* SingleNoteViewController.swift in Sources */,
+				C66727D6194280E9009A40FE /* Note.swift in Sources */,
+				C66727B51942377E009A40FE /* AllNotesViewController.swift in Sources */,
 				C66727B01942377E009A40FE /* AppDelegate.swift in Sources */,
+				C66727D019423828009A40FE /* CoreDataStack.swift in Sources */,
+				C66727E61942B5E7009A40FE /* CreateNoteViewController.swift in Sources */,
 				C66727B31942377E009A40FE /* NoteNote.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,9 +373,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = NoteNote/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NoteNote/NoteNote-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -342,9 +387,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = NoteNote/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NoteNote/NoteNote-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -403,6 +450,7 @@
 				C66727CB1942377E009A40FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C66727CC1942377E009A40FE /* Build configuration list for PBXNativeTarget "NoteNoteTests" */ = {
 			isa = XCConfigurationList;
@@ -411,6 +459,7 @@
 				C66727CE1942377E009A40FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
